@@ -1,0 +1,10 @@
+@import "./mixin.scss";
+
+.myApp {
+    @include themify(){
+      background: themed("primary-background");
+      color: themed("font-color");
+    }
+    font-size: 12px;
+    margin: auto
+  }

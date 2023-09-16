@@ -1,0 +1,22 @@
+@import "./theme.scss";
+
+$themes: (
+  light: (
+    primary-background: $light-primary-background-color,
+    secondary-background: $light-secondary-background-color,
+    font-color: $light-font-color,
+    divider: $light-divider-color,
+    secondary-selected-color: $light-secondary-selected-color,
+    secondary-not-selected-color: $light-secondary-not-selected-color,
+    header-background: $light-header-background-color,
+  ),
+  dark: (
+    primary-background: $dark-primary-background-color,
+    secondary-background: $dark-secondary-background-color,
+    font-color: $dark-font-color,
+    divider: $dark-divider-color,
+    secondary-selected-color: $dark-secondary-selected-color,
+    secondary-not-selected-color: $dark-secondary-not-selected-color,
+    header-background: $dark-header-background-color,
+  ),
+);

@@ -1,0 +1,56 @@
+@import "../../theme/theme.scss";
+
+.container {
+    background-image: url("../../assets/images/Mask\ Group\ 15033.svg");
+    height: 100vh;
+    display: flex;
+    gap: 176px;
+    padding: 0 64px 0 154px;
+    .left {
+        width: 346px;
+        .welcom-text {
+            color: #BA8AC7;
+            font-size: 61px;
+            .sec {
+                color: #FDEC07;
+            }
+        }
+        .signup-text {
+            margin-top: 12px;
+            color: #FFFFFF;
+            font-size: 27px;
+        }
+    }
+
+    .center{
+        background-color: #FFFFFF;
+        border-radius: 26px;
+        box-shadow: 0px 0px 10px #00000029;
+        padding: 54px 39.45px 43.78px 39.45px;
+        margin: auto;
+        min-width: 489px;
+        .img-container{
+            display: flex;
+            justify-content: center;
+            img{
+                height: 68px;
+                width: 198px;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 435px;
+        .welcom-text {
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+    }
+
+
+
+
+}
