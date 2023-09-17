@@ -29,6 +29,8 @@ const ProfilePannel = ({ size = 'sm' }: ProfilePannelProps) => {
         <MemoisedNavTab title="Branding" logo={brandingLogo} />
         <MemoisedNavTab title="Notifications" logo={notificationLogo} />
         <MemoisedNavTab title="Groups" logo={groupsLogo} />
+        <MemoisedNavTab title="Branding" logo={brandingLogo} />
+        <MemoisedNavTab title="Notifications" logo={notificationLogo} />
       </MemoisedNavList>
 
     </div>

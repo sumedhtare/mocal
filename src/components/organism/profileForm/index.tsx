@@ -5,12 +5,20 @@ import { MemoisedDropdown } from '../../atoms/dropdown'
 import { MemoisedDivider } from '../../atoms/divider'
 import { MemoisedButton } from '../../atoms/button'
 import { AppContext } from '../../../provider/appProvider/appContext'
-
+import noImg from '../../../assets/images/noimages.png'
 const ProfileForm = () => {
   const { user } = useContext(AppContext)
 
   if (user) {
     return <form className='profile-form-wrapper'>
+
+        <div className='profile-info'>
+            <img className="profile-img" src={noImg}/>
+            <div>
+            <p className='profile-name'>{(user as any).firstname}</p>
+            <p className='profile-email'> {(user as any).email}</p>
+            </div>
+        </div>
         <div className='profile-form-container'>
             <Input ui='profile' label='First Name' id="firstname" placeholder={(user as any).firstname} />
             <Input ui='profile' label='Last Name' id="lastname" placeholder={(user as any).lastname} />
