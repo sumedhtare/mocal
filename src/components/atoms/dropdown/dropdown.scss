@@ -1,0 +1,18 @@
+.dropdown-container {
+    .dropdown-wrapper {
+        border: 0.2px solid #707070;
+        margin-top: 2px;
+        .dropdown {
+            border: 0px;
+            outline: 0px;
+            width: 274.64px;
+            height: 34.64px;
+            background-color: #FFFFFF;
+            color: #707070;
+            border-right: 10px solid transparent;
+        }
+    }
+    .title{
+        font-size: 15px;
+    }
+}

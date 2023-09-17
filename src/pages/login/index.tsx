@@ -2,8 +2,10 @@ import React from 'react'
 import './login.scss'
 import logo from '../../assets/images/Mocal Logo 2@4x-8@2x.png'
 import LoginForm from '../../components/organism/loginForm'
-export default function Login () {
+import Layout from '../../components/template/layout'
+export default function LoginPage () {
   return (
+    <Layout>
         <div className="container">
             <div className='left'>
                 <h1 className="welcom-text">
@@ -27,5 +29,6 @@ export default function Login () {
 
             </div>
         </div>
+        </Layout>
   )
 }

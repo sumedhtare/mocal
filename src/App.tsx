@@ -1,16 +1,14 @@
-import './theme/global.scss'
 import React from 'react'
-import ThemeProvider from './provider/appProvider/appContext'
-import { ThemeSetter } from './provider/appProvider/themeSetter'
+import AppProvider from './provider/appProvider/appContext'
 import Navigation from './provider/routeProvider'
+import './theme/global.scss'
 
 function App () {
   return (
-    <ThemeProvider>
-      <ThemeSetter />
+    <AppProvider>
       <div className='myApp'/>
       <Navigation />
-    </ThemeProvider>
+    </AppProvider>
   )
 }
 

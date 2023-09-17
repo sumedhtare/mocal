@@ -15,7 +15,6 @@ const LoginForm = () => {
     const email = e.target.email.value
     const password = e.target.password.value
 
-    console.log(email)
     loginWithEmailAndPassword({ email, password })
       .then(res => {
         navigate('/dashboard')

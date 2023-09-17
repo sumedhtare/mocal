@@ -1,10 +1,33 @@
-.button{
+@import "../../../theme/mixin";
+
+.button {
+    @include themify() {
+        background-color: themed("primary-color");
+    }
     width: 131px;
     height: 37.48px;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 900;
-    background-color: #6E0D88;
     border: 0;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.sm-button {
+    @include themify() {
+        background-color: themed("primary-color");
+    }
+    width: 76px;
+    height: 28px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 900;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn-disabled {
+    background-color: #D6D6D6 !important;
 }

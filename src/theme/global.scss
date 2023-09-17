@@ -1,10 +1,24 @@
-@import "./mixin.scss";
+@import "./mixin";
 
 .myApp {
-    @include themify(){
-      background: themed("primary-background");
-      color: themed("font-color");
-    }
-    font-size: 12px;
-    margin: auto
+  @include themify() {
+    background: themed("primary-background");
+    color: themed("font-color");   
   }
+}
+
+.font-color {
+  transition: all 0.5s ease-in-out;
+
+  @include themify() {
+  color: themed("font-color");
+  }
+}
+
+.primary-color {
+  transition: all 0.5s ease-in-out;
+
+  @include themify() {
+  color: themed("primary-color");
+  }
+}

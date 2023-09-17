@@ -1,30 +1,41 @@
 $light-primary-color: #6E0D88;
-$dark-primary-color: black;
+$dark-primary-color: #cf40f5;
+$white-primary-color: black;
 
 $light-secondary-color: #E1003E;
 $dark-secondary-color: black;
+$white-secondary-color: black;
 
 $light-primary-background-color: #FFFFFF;
-$dark-primary-background-color: black;
+$dark-primary-background-color: #000000;
+$white-primary-background-color: #FAFAFA;
 
 $light-secondary-background-color: #EFEFEF;
-$dark-secondary-background-color: black;
+$dark-secondary-background-color: #383838;
+$white-secondary-background-color: #EFEFEF;
 
 $light-font-color: #000000;
 $dark-font-color: #FFFFFF;
+$white-font-color: #000000;
+
 
 $light-divider-color: #707070;
 $dark-divider-color: #FFFFFF;
+$white-divider-color: #FFFFFF;
 
 $light-secondary-selected-color: #F7F7F7;
-$dark-secondary-selected-color: #FFFFFF;
+$dark-secondary-selected-color: #707070;
+$white-secondary-selected-color: #FFFFFF;
 
 $light-secondary-not-selected-color: #F7F7F7;
 $dark-secondary-not-selected-color: #FFFFFF;
+$white-secondary-not-selected-color: #FFFFFF;
 
 $light-header-background-color: #EFEFEF;
 $dark-header-background-color: #EFEFEF;
+$white-header-background-color: #EFEFEF;
 
+$disabled-background: #D6D6D6;
 
 $xs-font: 12px;
 $sm-font: 13px;
@@ -32,3 +43,5 @@ $rg-font: 14px;
 $md-font: 15px;
 $lg-font: 16px;
 $xl-font: 20px;
+
+$max-width: 1920px;

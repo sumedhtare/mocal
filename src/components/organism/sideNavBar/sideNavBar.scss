@@ -1,0 +1,48 @@
+@import "../../../theme/mixin.scss";
+
+.navbar-container {
+    @include themify() {
+        background-color: themed("primary-background");
+    }
+
+    transition: all 0.5s ease-in-out;
+
+    width: 49px;
+    height: calc(100vh - 86px);
+    position: fixed;
+    top: 86px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.5s ease-in-out;
+    padding-left: 23px;
+
+    &:hover {
+        width: 250px;
+    }
+
+    .logo {
+        margin-left: -4px;
+        margin-top: 20px;
+        width: 36px;
+        height: 49px;
+    }
+
+    .nav-wrapper {
+        margin-top: 53.84px;
+
+        .nav-spacer{
+            height: calc(100vh - 560px);
+        }
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 29.05px;
+            cursor: pointer;
+
+            .nav-logo{
+                width: 19px;
+                height: 19px;
+            }
+        }
+    }
+}

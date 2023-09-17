@@ -4,6 +4,8 @@ import {
   RouterProvider
 } from 'react-router-dom'
 import Login from '../../pages/login'
+import DashboardPage from '../../pages/dashboard'
+import ProfilePage from '../../pages/profile'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +14,11 @@ const router = createBrowserRouter([
   },
   {
     path: 'dashboard',
-    element: <div>About</div>
+    element: <DashboardPage/>
+  },
+  {
+    path: 'profile',
+    element: <ProfilePage/>
   }
 ])
 

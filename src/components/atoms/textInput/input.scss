@@ -1,3 +1,5 @@
+@import "../../../theme/mixin";
+
 .input-login{
     text-decoration: none;
     color: #707070;
@@ -15,4 +17,25 @@
     margin-top: 5px;
     height: 0.3px;
     background-color: #707070;
+}
+
+.input-label{
+    @include themify() {
+        color: themed("primary-color");
+    }
+    font-size: 15px;
+}
+
+.input-profile{
+    margin-top: 2px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 13px;
+    border: 0.2px solid #707070;
+    width: 253.63px;
+    height: 34.64px;
+    padding: 0 10px;
+    &:focus{
+        outline: 0;
+    };
 }

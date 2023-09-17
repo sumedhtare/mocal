@@ -1,0 +1,43 @@
+@import "../../../theme/mixin";
+
+.nav-tab-container {
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 9px;
+
+    .text {
+        @include themify() {
+            color: themed("font-color");
+        }
+
+        transition: all 0.5s ease-in-out;
+        font-size: 14px;
+        font-weight: 900;
+        height: auto;
+    }
+
+    .logo {
+        width: 17px;
+        height: 17px;
+        padding-left: 5px;
+    }
+}
+
+.red {
+    @include themify() {
+        color: themed("red-font");
+    }
+
+    background-color: $light-secondary-selected-color;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 8px;
+    height: 34px;
+    padding-left: 5px;
+    margin-left: 3px;
+}
